@@ -1,0 +1,11 @@
+
+import "remote-data" as remote_data
+import "common-functions" as common_functions
+
+print(remote_data.ids)
+
+common_functions.formatted_print()
+
+main = rule {
+	true == true
+}
