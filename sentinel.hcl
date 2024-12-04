@@ -1,10 +1,10 @@
 import "static" "remote-data" {
-  source = "https://raw.githubusercontent.com/jweigand/remote-sentinel-source/refs/heads/main/remote-data.json"
+  source = "s3::https://s3.amazonaws.com/tfe-logical-horse-storage-sentinel/remote-data.json"
   format = "json"
 }
 
 import "module" "common-functions" {
-    source = https://raw.githubusercontent.com/jweigand/remote-sentinel-source/refs/heads/main/modules/common-functions.sentinel
+    source = "s3::https://s3.amazonaws.com/tfe-logical-horse-storage-sentinel/modules/common-functions.sentinel"
 }
 
 policy "remote" {
