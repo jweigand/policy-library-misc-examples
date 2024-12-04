@@ -1,5 +1,5 @@
 import "static" "remote-data" {
-  source = https://s3.amazonaws.com/tfe-logical-horse-storage-sentinel/remote-data.json"
+  source = "https://s3.amazonaws.com/tfe-logical-horse-storage-sentinel/remote-data.json"
   format = "json"
 }
 
