@@ -1,0 +1,10 @@
+import "http"
+
+resp = http.client.with_timeout(30).get("https://httpstat.us/200?sleep=15000")
+
+print(resp)
+main = rule { resp.body contains "200" }
+
+
+
+
