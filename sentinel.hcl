@@ -1,3 +1,5 @@
+/*
+
 import "static" "remote-data" {
   source = "https://s3.amazonaws.com/tfe-logical-horse-storage-sentinel/remote-data.json"
   format = "json"
@@ -11,6 +13,7 @@ policy "remote" {
     source = "./remote.sentinel"
     enforcement_level = "advisory"
 }
+*/
 
 policy "seconds_15" {
     source = "./seconds_15.sentinel"
