@@ -1,8 +1,14 @@
 import "http"
+import "time"
+
+start = time.now
 
 resp = http.client.with_timeout(30).get("https://httpstat.us/200?sleep=15000")
 
-print(resp)
+stop = time.now
+duration = time.load(stop).sub(start)
+print("Policy execution time:", duration / 1000000, "ms")
+
 main = rule { resp.body contains "200" }
 
 
