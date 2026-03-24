@@ -2,7 +2,7 @@ import "http"
 import "time"
 start = time.now
 
-resp = http.client.with_timeout(30).get("https://httpstat.us/200?sleep=25000")
+resp = http.client.with_timeout(30).get("https://mock.httpstatus.io/200?delay=25000")
 
 stop = time.now
 duration = time.load(stop).sub(start)
